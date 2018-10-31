@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "run",
+    "description": "Every time you start a run of an algo, model or function."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "release": {
+      "model": "release",
+      "via": "runs"
+    },
+    "status": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "started",
+        "complete",
+        "failed"
+      ]
+    }
+  }
+}
